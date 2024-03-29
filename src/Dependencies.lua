@@ -5,7 +5,7 @@ Timer = require 'lib/knife.timer'
 
 -- utility
 require 'src/constants'
-require 'src/StateMachine'
+require 'src/states/StateMachine'
 
 -- game states
 require 'src/states/BaseState'
@@ -13,6 +13,7 @@ require 'src/states/game/PlayState'
 require 'src/states/game/StartState'
 
 --general
+require 'src/Commando'
 
 --sounds
 gSounds = {
