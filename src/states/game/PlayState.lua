@@ -12,7 +12,7 @@ end
 function PlayState:update(dt)
     backgroundScroll = (backgroundScroll + BACKGROUND_SCROLL_SPEED * dt) % BACKGROUND_LOOPING_POINT
     groundScroll = (groundScroll + GROUND_SCROLL_SPEED * dt) % VIRTUAL_WIDTH
-    commando:update()
+    commando:update(dt)
 end
 
 function PlayState:render()
