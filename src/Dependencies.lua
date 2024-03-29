@@ -6,22 +6,11 @@ Timer = require 'lib/knife.timer'
 -- utility
 require 'src/constants'
 require 'src/StateMachine'
-require 'src/Util'
 
 -- game states
 require 'src/states/BaseState'
 require 'src/states/game/PlayState'
 require 'src/states/game/StartState'
-
--- entity states
-require 'src/states/entity/PlayerFallingState'
-require 'src/states/entity/PlayerIdleState'
-require 'src/states/entity/PlayerJumpState'
-require 'src/states/entity/PlayerWalkingState'
-
-require 'src/states/entity/snail/SnailChasingState'
-require 'src/states/entity/snail/SnailIdleState'
-require 'src/states/entity/snail/SnailMovingState'
 
 --general
 
@@ -35,7 +24,8 @@ for i, sound in pairs(gSounds) do
 end
 
 gTextures = {
-
+    ['background'] = love.graphics.newImage('graphics/background.png'),
+    ['ground'] = love.graphics.newImage('graphics/ground.png'),
 }
 
 gFrames = {
